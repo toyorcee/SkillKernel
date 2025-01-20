@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  /* Custom Variables */
+  --primary-color: #0d6efd;
+  --secondary-color: #6c757d;
+  --light-color: #f8f9fa;
+  --dark-color: #343a40;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --border-radius: 0.35rem;
+  --box-shadow: 4px 4px 2px rgba(0, 0, 0, 1);
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0px 4px 8px var(--shadow-color);
+}
+
+.search-bar {
+  position: relative;
+  width: 475px;
+}
+
+.search-bar .input-group {
+  width: 100%;
+}
+.search-bar .input-group ::placeholder {
+  font-size: small;
+}
+
+.search-bar .input-group i {
+  background: crimson;
+  color: #f8f9fa;
+  padding: 0.35rem 0.7rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  box-shadow: var(--box-shadow);
+}
+
+.search-bar .form-control {
+  width: 100%;
+  height: 3rem;
+  border-radius: 0 5px 5px 0;
+  border: none;
+  padding-right: 2.5rem;
+  box-shadow: 0px 4px 8px var(--shadow-color);
+}
+
+.search-bar .input-group-text {
+  display: none;
+}
+
+.search-bar i {
+  position: absolute;
+  top: 50%;
+  right: 1px;
+  transform: translateY(-50%);
+  color: var(--secondary-color);
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.navbar .btn {
+  border-radius: 5px;
+}
+
+.navbar .btn-primary {
+  margin-left: 10px;
+}
+
+.nav-item a {
+  font-size: small;
+  color: black;
+  font-weight: 900;
+}
+
+.course {
+  background: crimson;
+  padding: 0.1rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+
+.course .nav-link i {
+  margin-left: 0.5rem;
+}
+
+.apply {
+  background: crimson;
+  padding: 0.4rem;
+  font-size: small;
+  font-weight: 900;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+}
+
+.login {
+  border: 1px solid darkgray;
+  font-weight: 900;
+  font-size: small;
+  padding: 0.4rem 0.8rem;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+}
