@@ -117,3 +117,169 @@ body {
   box-shadow: var(--box-shadow);
   border-radius: var(--border-radius);
 }
+
+/* Hero section */
+.section1 {
+  background: linear-gradient(to bottom, #e0e0e0, #f5f5f5);
+}
+.hero-section .container {
+  background-image: url("../assets/ladyprofessional.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 2rem 1.3rem;
+  border-radius: var(--border-radius);
+}
+
+.hero-section .fw-bold span {
+  color: crimson;
+}
+
+.hero-section .explore {
+  padding: 0.85rem 3rem;
+  min-width: 160px;
+  text-align: center;
+  color: #fff;
+  background-color: crimson;
+  border: none;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.hero-section .login {
+  padding: 0.85rem 3rem;
+  min-width: 250px;
+  text-align: center;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  border: none;
+}
+
+/* Search section */
+.search-con {
+  background-color: #fff;
+}
+
+.search-section {
+  border-radius: var(--border-radius);
+  padding: 0.5rem 0.4rem;
+}
+
+.search-section .learn {
+  border: 1px solid grey;
+  border-radius: var(--border-radius);
+  padding: 0.5rem 0.2rem;
+  font-size: small;
+}
+
+.search-section button {
+  background-color: crimson;
+  color: #fff;
+  box-shadow: var(--box-shadow);
+}
+
+.search-section button:hover {
+  background-color: crimson;
+  color: #fff;
+}
+
+/* Popular courses */
+.parentrow {
+  justify-content: flex-start !important; /* Force alignment to the left */
+}
+
+.content1,
+.content2 {
+  text-align: left; /* Ensure inner text aligns left */
+}
+
+.popular-courses .card {
+  margin: auto;
+  min-height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.popular-courses .parentrow {
+  margin: auto;
+  gap: 3;
+}
+
+.card-body .content1 {
+  flex: 2;
+  padding-left: 0;
+}
+
+.card-body .content2 .amount {
+  text-decoration: line-through;
+}
+
+.popular-courses .row {
+  display: flex;
+  align-items: flex-start;
+}
+
+.popular-courses .content1 .access {
+  border-radius: 1rem;
+  background-color: crimson;
+  margin: 1rem;
+  padding: 0.4rem;
+  color: #fff;
+  font-size: small;
+}
+
+.popular-courses .row.g-12 {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.card-body .content2 p {
+  margin-bottom: 0.2rem;
+}
+
+.card-body .content2 > div {
+  margin-bottom: 1rem;
+}
+.popular-courses .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+}
+.popular-courses .details {
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+}
+
+.page-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: none;
+  border: none;
+}
+
+.page-link .dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+.page-item {
+  margin: 0 3px; /* Add horizontal space between dots */
+}
+
+.page-item.active .page-link .dot {
+  background-color: #007bff; /* Active dot color */
+}
+
+.page-link:hover .dot {
+  background-color: #0056b3; /* Hover dot color */
+}
