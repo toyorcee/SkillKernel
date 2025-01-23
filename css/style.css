@@ -12,7 +12,9 @@ body {
   /* Custom Variables */
   --primary-color: #0d6efd;
   --secondary-color: #6c757d;
-  --light-color: #f8f9fa;
+  --light-color: rgb(255, 231, 235);
+  --light-dark-color: rgb(255, 118, 141);
+  --linear-gradient-color: linear-gradient(90deg, tomato, purple);
   --dark-color: #343a40;
   --shadow-color: rgba(0, 0, 0, 0.1);
   --border-radius: 0.35rem;
@@ -130,6 +132,7 @@ body {
   background-position: center;
   padding: 2rem 1.3rem;
   border-radius: var(--border-radius);
+  display: block;
 }
 
 .hero-section .fw-bold span {
@@ -174,14 +177,9 @@ body {
 }
 
 .search-section button {
-  background-color: crimson;
-  color: #fff;
+  color: var(--light-dark-color);
+  background-color: var(--light-color);
   box-shadow: var(--box-shadow);
-}
-
-.search-section button:hover {
-  background-color: crimson;
-  color: #fff;
 }
 
 /* Popular courses */
@@ -195,14 +193,14 @@ body {
   flex: 1;
 }
 
-.card .header {
-  line-height: 1;
-}
-
 .popular-courses .card .header {
   font-size: 20px;
-  font-weight: 800;
+  font-weight: bolder;
   line-height: 1.1;
+  background: var(--linear-gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
 }
 
 .popular-courses .programme-text {
@@ -229,10 +227,10 @@ body {
 }
 .popular-courses .content-1 .access {
   border-radius: 1rem;
-  background-color: crimson;
+  color: var(--light-dark-color);
+  background-color: var(--light-color);
   padding: 0.4rem 0.5rem;
   margin: 5px auto;
-  color: #fff;
   font-size: 12px;
   width: 100%;
 }
@@ -520,6 +518,124 @@ body {
 .section2 .certificate-details .bg-tomato {
   background-color: tomato;
 }
+/* Find Course Section */
+.section3 {
+  background-color: #fff;
+}
+
+.section3 .findcourse-details {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.section3 .findcourse-details {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1rem;
+}
+
+.section3 .findcourse-details .image-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+}
+
+.section3 .findcourse-details .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.section3 .findcourse-details .right-column h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.section3 .findcourse-details .right-column p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.section3 .findcourse-details .right-column button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.section3 .findcourse-details .right-column button:hover {
+  background-color: #0056b3;
+}
+
+/* Right Column Buttons Section */
+.section3 .right-column {
+  padding: 2rem;
+}
+
+.section3 .right-column h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  position: relative;
+  background: var(--linear-gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
+.section3 .right-column h2::after {
+  content: "";
+  display: block;
+  width: 3.5rem;
+  height: 4px;
+  background-color: #000;
+  margin-top: 0.5rem;
+  margin-left: 0;
+}
+
+.section3 .right-column p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.section3 .popular-topics h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.section3 .right-paragraph {
+  font-size: 10px;
+}
+
+.section3 .bold {
+  font-weight: bolder;
+}
+
+.section3 .topic-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.section3 .topic-buttons button {
+  color: var(--light-dark-color) !important;
+  background-color: var(--light-color) !important;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: var(--box-shadow);
+}
 
 /* Responsiveness for medium screens */
 @media (max-width: 992px) {
@@ -528,6 +644,25 @@ body {
   }
   .certificate-details {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .section3.grid-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .section3 .image-container {
+    height: auto;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .topic-buttons {
+    justify-content: center;
   }
 }
 
