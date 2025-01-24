@@ -842,10 +842,11 @@ body {
   right: 1px;
   transform: translateY(-50%);
   padding: 2px 0px;
+  z-index: 2000;
 }
 
-.newsletter-form ::placeholder{
-    font-size: 11px;
+.newsletter-form ::placeholder {
+  font-size: 11px;
 }
 
 .section5 .footer-section .newsletter-section button:hover {
