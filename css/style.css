@@ -308,6 +308,10 @@ button {
   font-size: small;
 }
 
+.popular-courses .details-btn {
+  margin-top: 0.5rem;
+}
+
 .popular-courses .details {
   background-color: #fff;
   border-radius: var(--border-radius);
@@ -1020,6 +1024,9 @@ button {
     height: 700px;
     flex: 1;
   }
+  .popular-courses .details-btn {
+    margin-top: 0.3rem;
+  }
   .left-p {
     padding-top: 18px;
   }
@@ -1312,7 +1319,7 @@ button {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 425px) and (min-width: 1px) {
   .popular-courses .card {
     height: 600px;
     margin: auto;
@@ -1330,6 +1337,23 @@ button {
     font-size: 11px;
   }
   .popular-topics .topic-buttons {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 375px) and (min-width: 1px) {
+  .popular-courses .card {
+    height: 640px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 320px) and (min-width: 1px) {
+  .popular-courses .card {
+    height: 750px;
+    margin: auto;
+  }
+  .alignment-wrapper {
     flex-direction: column;
   }
 }
