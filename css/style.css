@@ -3,14 +3,20 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+h1,
+h2,
+button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
 }
 
 :root {
   /* Custom Variables */
-  --primary-color: #0d6efd;
+  --primary-color: crimson;
   --secondary-color: rgb(255, 248, 250);
   --light-color: rgb(255, 231, 235);
   --light-dark-color: rgb(255, 118, 141);
@@ -22,6 +28,12 @@ body {
 }
 
 /* Navbar */
+.navbar .logo {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.55rem;
+  color: var(--primary-color);
+}
 .navbar {
   box-shadow: 0px 4px 8px var(--shadow-color);
 }
@@ -40,7 +52,7 @@ body {
 }
 
 .search-bar .input-group i {
-  background: crimson;
+  background-color: var(--primary-color);
   color: #f8f9fa;
   padding: 0.35rem 0.7rem;
   border-radius: 50%;
@@ -89,7 +101,7 @@ body {
 }
 
 .course {
-  background: crimson;
+  background-color: var(--primary-color);
   padding: 0.1rem;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
@@ -104,7 +116,7 @@ body {
 }
 
 .apply {
-  background: crimson;
+  background-color: var(--primary-color);
   padding: 0.4rem;
   font-size: small;
   font-weight: 900;
@@ -137,7 +149,7 @@ body {
 }
 
 .hero-section .fw-bold span {
-  color: crimson;
+  color: var(--primary-color);
 }
 
 .hero-section .explore {
@@ -147,7 +159,7 @@ body {
   font-weight: 900;
   text-align: center;
   color: #fff;
-  background-color: crimson;
+  background-color: var(--primary-color);
   border: none;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
@@ -359,7 +371,7 @@ body {
   line-height: 1.4;
 }
 .course-details .card .inner p {
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 500;
 }
 .course-details .card .inner .explore {
@@ -1120,10 +1132,16 @@ body {
     font-size: 11px;
   }
   .popular-courses .card {
-    margin: auto;
-    margin-left: 24px;
+    margin: 0px auto;
     height: 700px;
     flex: 1;
+  }
+  .popular-courses .card2 {
+    padding-top: 4px;
+  }
+  .popular-courses > .fa-chevron-left,
+  .popular-courses > .fa-chevron-right {
+    display: none !important;
   }
   .left-p {
     padding-top: 18px;
@@ -1142,7 +1160,7 @@ body {
     font-size: 13px;
   }
   .course-details .icon-text {
-    font-size: 20px;
+    font-size: 12px;
   }
   .certificate-details .card .inner p {
     font-size: 14px;

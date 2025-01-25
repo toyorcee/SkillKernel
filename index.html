@@ -10,7 +10,11 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -22,7 +26,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
       <div class="container">
-        <a class="navbar-brand fw-bold me-3" href="#">Skillkernel</a>
+        <a class="navbar-brand fw-bold me-3 logo" href="#">Skillkernel</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -184,7 +188,7 @@
               </div>
             </div>
             <!-- Course Card 2 -->
-            <div class="col-md-6 col-12">
+            <div class="col-md-6 col-12 card2">
               <div class="card shadow p-4">
                 <h5 class="mt-1 header">
                   Professional Certificate Course in<br />
@@ -269,8 +273,9 @@
             </button>
           </div>
         </div>
-        <!-- Font Awesome Icons Outside the Container -->
+        <!-- Font Awesome Icons in Popular Courses -->
         <i
+          id="popular-left-chevron"
           class="fas fa-chevron-left cursor-pointer hover:rotate-45 transition-transform duration-300 position-absolute"
           style="
             top: 50%;
@@ -280,6 +285,7 @@
           "
         ></i>
         <i
+          id="popular-right-chevron"
           class="fas fa-chevron-right cursor-pointer hover:rotate-45 transition-transform duration-300 position-absolute"
           style="
             top: 50%;
