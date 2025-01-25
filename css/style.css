@@ -37,13 +37,19 @@ button {
 .navbar {
   box-shadow: 0px 4px 8px var(--shadow-color);
 }
-
+.navbar img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-right: 1rem;
+  display: block;
+  width: 130px;
+  height: auto;
+}
 .search-bar {
   position: relative;
   width: 500px;
   margin: 0 auto;
 }
-
 .search-bar .input-group {
   width: 100%;
 }
@@ -357,8 +363,14 @@ button {
   flex-direction: column;
   justify-content: space-between;
 }
+#bg {
+  background-image: url("../assets/Pattern.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .course-details .card .inner {
-  padding: 25px;
+  padding: 35px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1255,7 +1267,6 @@ button {
     text-align: center;
     width: 100%;
   }
-
   .section5 .newsletter-section .newsletter-text h6 {
     flex-direction: column;
     justify-content: center;
@@ -1265,7 +1276,6 @@ button {
     font-weight: bolder;
     justify-content: center;
   }
-
   .section5 .newsletter-section .newsletter-text p {
     flex-direction: column;
     justify-content: center;
@@ -1274,21 +1284,41 @@ button {
     font-size: 11px;
     justify-content: center;
   }
-
   .section5 .footer-bottom {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
   }
-
   .section5 .social-icons {
     font-size: 1rem;
     justify-content: center;
     align-items: center;
     width: 100px;
   }
+  .popular-topics .topic-buttons {
+    flex-direction: column;
+  }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 425px) {
+  .popular-courses .card {
+    height: 600px;
+    margin: auto;
+  }
+  .popular-courses .card1 {
+    margin-left: 10px;
+  }
+  .popular-courses .card2 {
+    margin-left: 10px;
+  }
+  .search-con form {
+    margin-left: none !important;
+  }
+  .search-section .learn {
+    font-size: 11px;
+  }
+  .popular-topics .topic-buttons {
+    flex-direction: column;
+  }
 }
