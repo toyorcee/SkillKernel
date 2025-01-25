@@ -1300,6 +1300,16 @@ button {
   .popular-topics .topic-buttons {
     flex-direction: column;
   }
+  .search-section .learn {
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .section4 .contact-text {
+    text-align: center;
+  }
 }
 
 @media (max-width: 425px) {
