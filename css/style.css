@@ -1325,7 +1325,6 @@ button {
   }
   .popular-courses .card {
     margin: 0px auto;
-    height: 700px;
     flex: 1;
   }
   .popular-courses .card2 {
@@ -1490,7 +1489,6 @@ button {
     text-align: center;
   }
 }
-
 @media (max-width: 425px) {
   .popular-courses .card {
     height: 600px;
@@ -1512,14 +1510,12 @@ button {
     flex-direction: column;
   }
 }
-
 @media (max-width: 375px) {
   .popular-courses .card {
     height: 640px;
     margin: auto;
   }
 }
-
 @media (max-width: 320px) {
   .popular-courses .card {
     height: 750px;
