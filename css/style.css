@@ -1194,8 +1194,8 @@ button {
   .popular-courses .card {
     margin: auto;
     margin-left: 24px;
-    height: 700px;
     flex: 1;
+    height: 550px;
   }
   .popular-courses .details-btn {
     margin-top: 0.3rem;
@@ -1269,6 +1269,21 @@ button {
     padding: 2px 0px;
     z-index: 2000;
   }
+  .section4 .testimonials .right-column .inner-right-column {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .section4 .testimonials .right-column .flex-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media (max-width: 576px) {
   .navbar .navbar-brand {
@@ -1326,6 +1341,7 @@ button {
   .popular-courses .card {
     margin: 0px auto;
     flex: 1;
+    height: 550px;
   }
   .popular-courses .card2 {
     padding-top: 4px;
@@ -1489,6 +1505,11 @@ button {
     text-align: center;
   }
 }
+@media (max-width: 450px) {
+  .popular-courses .card {
+    height: 600px;
+}
+}
 @media (max-width: 425px) {
   .popular-courses .card {
     height: 600px;
@@ -1512,13 +1533,13 @@ button {
 }
 @media (max-width: 375px) {
   .popular-courses .card {
-    height: 640px;
+    height: 700px;
     margin: auto;
   }
 }
 @media (max-width: 320px) {
   .popular-courses .card {
-    height: 750px;
+    height: 800px;
     margin: auto;
   }
   .alignment-wrapper {
