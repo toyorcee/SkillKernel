@@ -1284,6 +1284,13 @@ button {
     justify-content: center;
     align-items: center;
   }
+  .section5 .newsletter-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
 }
 @media (max-width: 576px) {
   .navbar .navbar-brand {
@@ -1508,7 +1515,7 @@ button {
 @media (max-width: 450px) {
   .popular-courses .card {
     height: 600px;
-}
+  }
 }
 @media (max-width: 425px) {
   .popular-courses .card {
