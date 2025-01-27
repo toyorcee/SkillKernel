@@ -73,7 +73,7 @@ button {
 }
 
 .search-bar .form-control {
-  width: 100%;
+  width: 100px;
   height: 3rem;
   border-radius: 0 5px 5px 0;
   border: none;
@@ -758,9 +758,9 @@ button {
   flex-direction: column;
 }
 .section4 .contact-name h4 {
-  font-size: 20px;
+  font-size: 25px;
   font-style: italic;
-  font-weight: bold;
+  font-weight: bolder;
   line-height: 1;
   margin: 0;
 }
@@ -769,6 +769,7 @@ button {
   font-style: italic;
   line-height: 1;
   margin: 0;
+  color: gray;
 }
 .section4 .contact-details {
   flex-direction: column;
@@ -981,6 +982,9 @@ button {
   .search-bar .input-group {
     width: 100%;
   }
+  .search-bar .form-control {
+    width: 100%;
+  }
   .nav-item a {
     font-size: 12px;
   }
@@ -1030,6 +1034,7 @@ button {
   }
   .navbar .search-bar .form-control {
     height: 2.5rem;
+    width: 100%;
   }
   .navbar .search-bar i {
     right: 0.5rem;
